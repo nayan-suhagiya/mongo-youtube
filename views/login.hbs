@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    {{>header}}
+    <title>Login</title>
+  </head>
+  <body>
+    <center>
+    {{>navbar}}
+      <h3>Login : </h3>
+      <form action="/login" method="POST">
+        <div>
+          <input class="col-sm-3" type="email" name="email" id="email" placeholder="email">
+          <br><br>
+          <input class="col-sm-3" type="password" name="password" id="password" placeholder="password">
+          <br><br>
+          <button type="submit" id="button" class="btn btn-success">Login</button>
+          <button type="reset" id="button" class="btn btn-danger">Reset</button>
+        </div>
+      </form>
+    </center>
+  </body>
+</html>

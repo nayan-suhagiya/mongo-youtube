@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    {{>header}}
+    <title>Register</title>
+  </head>
+  <body>
+    <center>
+      {{>navbar}}
+      <h3>Register : </h3>
+      <form action="/register" method="post">
+      <div>
+        <input class="col-sm-3" type="text" name="fname" id="fname" placeholder="enter fname">
+        <br><br>
+        <input class="col-sm-3" type="text" name="lname" id="lname" placeholder="enter lname">
+        <br><br>
+        <input class="col-sm-3" type="email" name="email" id="email" placeholder="enter email">
+        <br><br>
+        <label >Select gender : </label>
+        <input  type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+        <input  type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+        <br><br>
+        <input class="col-sm-3" type="number" name="age" id="age" placeholder="age" min="1" max="150">
+        <br><br>
+        <input class="col-sm-3" type="tel" name="phone" id="phone" placeholder="enter phone number">
+        <br><br>
+        <input class="col-sm-3" type="password" name="password" id="password" placeholder="password">
+        <br><br>
+        <input class="col-sm-3" type="password" name="confirmpassword" id="confirmpassword" placeholder="confirm password">
+        <br><br>
+        <button type="submit" id="button" class="btn btn-success">Submit</button>
+        <button type="reset" id="button" class="btn btn-danger">Reset</button>
+      </div>
+      </form>
+    </center>
+  </body>
+</html>
